@@ -1,0 +1,85 @@
+/* Custom scrollbar for a cleaner look */
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    background: #1A1A2E;
+}
+::-webkit-scrollbar-thumb {
+    background: #A78BFA;
+    border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #D8B4FE;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #0D0D1A;
+    color: #E2E8F0;
+}
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+.fade-in.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.slide-up {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+.slide-up.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.scale-in {
+    opacity: 0;
+    transform: scale(0.9);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+.scale-in.show {
+    opacity: 1;
+    transform: scale(1);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+#hero-canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+.parallax-section {
+    transform: translateY(var(--scroll-y-offset, 0px));
+    transition: transform 0.1s ease-out;
+}
+
+.skill-icon-js:hover { color: #F7DF1E !important; }
+.skill-icon-react:hover { color: #61DAFB !important; }
+.skill-icon-html:hover { color: #E34F26 !important; }
+.skill-icon-css:hover { color: #1572B6 !important; }
+.skill-icon-cpp:hover { fill: #00599C !important; }
+.skill-icon-angular:hover { color: #DD0031 !important; }
+.skill-icon-git:hover { color: #F05032 !important; }
+.skill-icon-github:hover { color: #181717 !important; }
+.skill-icon-vscode:hover { fill: #007ACC !important; }
+.skill-icon-figma:hover { fill: #A259FF !important; }
+.skill-icon-soft:hover { color: #FBCFE8 !important; }
+
+.project-card:hover {
+    transform: translateY(-5px) rotateZ(1deg);
+    box-shadow: 0 10px 20px rgba(167, 139, 250, 0.2);
+}

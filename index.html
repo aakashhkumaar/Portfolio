@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AKASH | Portfolio</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts - Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- External CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body class="bg-gray-950 text-gray-200">
+
+    <!-- Navigation Bar -->
+    <nav class="fixed w-full bg-gray-900 bg-opacity-80 backdrop-blur-sm z-50 shadow-lg rounded-b-xl">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#hero" class="text-2xl font-bold text-[#A78BFA] hover:text-[#D8B4FE] transition duration-300">AKASH KUMAR</a>
+            <div class="hidden md:flex space-x-8">
+                <a href="#about" class="text-gray-300 hover:text-[#A78BFA] transition duration-300 font-medium">About</a>
+                <a href="#experience" class="text-gray-300 hover:text-[#A78BFA] transition duration-300 font-medium">Experience</a>
+                <a href="#projects" class="text-gray-300 hover:text-[#A78BFA] transition duration-300 font-medium">Projects</a>
+                <a href="#skills" class="text-gray-300 hover:text-[#A78BFA] transition duration-300 font-medium">Skills</a>
+                <a href="#contact" class="text-gray-300 hover:text-[#A78BFA] transition duration-300 font-medium">Contact</a>
+            </div>
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-button" class="md:hidden text-gray-300 hover:text-[#A78BFA] focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+            </button>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-gray-800 rounded-b-xl py-2">
+            <a href="#about" class="block px-6 py-2 text-gray-300 hover:bg-gray-700 hover:text-[#A78BFA] transition duration-300">About</a>
+            <a href="#experience" class="block px-6 py-2 text-gray-300 hover:bg-gray-700 hover:text-[#A78BFA] transition duration-300">Experience</a>
+            <a href="#projects" class="block px-6 py-2 text-gray-300 hover:bg-gray-700 hover:text-[#A78BFA] transition duration-300">Projects</a>
+            <a href="#skills" class="block px-6 py-2 text-gray-300 hover:bg-gray-700 hover:text-[#A78BFA] transition duration-300">Skills</a>
+            <a href="#contact" class="block px-6 py-2 text-gray-300 hover:bg-gray-700 hover:text-[#A78BFA] transition duration-300">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="relative min-h-screen flex items-center justify-center text-center bg-gradient-to-br from-[#0D0D1A] to-[#1A1A2E] overflow-hidden pt-20">
+        <!-- 3D Background Canvas -->
+        <canvas id="hero-canvas"></canvas>
+
+        <div class="relative z-10 p-8 max-w-4xl mx-auto fade-in">
+            <h1 class="text-5xl md:text-7xl font-extrabold leading-tight text-white mb-4 drop-shadow-lg">
+                Hi, I'm <span class="text-[#A78BFA]">AKASH KUMAR</span>
+            </h1>
+            <p class="text-xl md:text-2xl text-gray-300 mb-8">
+                A passionate <span class="font-semibold text-[#D8B4FE]">Frontend Developer</span> building beautiful and functional web experiences.
+            </p>
+            <a href="#projects" class="inline-block bg-[#A78BFA] hover:bg-[#D8B4FE] text-white font-bold py-3 px-8 rounded-full shadow-lg transform hover:scale-105 transition duration-300 ease-in-out">
+                View My Work
+            </a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 md:py-32 bg-[#1A1A2E] parallax-section">
+        <div class="container mx-auto px-6 max-w-4xl">
+            <h1 class="text-7xl font-bold text-center text-[#A78BFA] mb-12 slide-up">About Me</h1>
+            <div class="flex flex-col md:flex-row items-center md:space-x-12">
+                <div class="md:w-1/3 mb-8 md:mb-0 scale-in">
+                    <img src="/images/Kash.jpg" alt="AKASH KUMAR Photo" class="rounded-full shadow-lg border-4 border-[#6D28D9] mx-auto">
+                </div>
+                <div class="md:w-2/3 text-lg text-gray-300 leading-relaxed fade-in">
+                    <p class="mb-4">
+                        Hello! I'm AKASH KUMAR, a dedicated web developer with a strong passion for creating engaging and user-friendly digital experiences. My journey into web development began during my B.Tech. in Computer Science at Amity University Uttar Pradesh, during Internships, I gained hands-on experience in HTML, CSS, and JavaScript. In addition I'm learning React.js and NEXT.js
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="py-20 md:py-32 bg-[#0D0D1A] parallax-section">
+        <div class="container mx-auto px-6 max-w-4xl">
+            <h2 class="text-4xl font-bold text-center text-[#A78BFA] mb-12 slide-up">Experience</h2>
+            <div class="relative border-l-4 border-[#6D28D9] ml-4 md:ml-0">
+                <!-- Experience Item: Frontend Developer MakeMaya Solutions -->
+                <div class="mb-12 ml-6 fade-in">
+                    <div class="absolute w-4 h-4 bg-[#A78BFA] rounded-full -left-2 top-0 mt-1"></div>
+                    <div class="bg-[#1A1A2E] p-6 rounded-lg shadow-xl border border-[#6D28D9]">
+                        <h3 class="text-2xl font-semibold text-[#D8B4FE] mb-2">Frontend Developer</h3>
+                        <p class="text-gray-400 mb-2">MakeMaya Solutions | (1 Jan 2024 - 1 Feb 2025)</p>
+                        <ul class="list-disc list-inside text-gray-300 space-y-1">
+                            <li>Collaborated with senior developers to build and maintain responsive websites.</li>
+                            <li>Gained hands-on experience in HTML, CSS, JavaScript, and real-time debugging.</li>
+                            <li>Contributed to multiple live client projects with clean, optimized code.</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Experience Item: Web Development Intern - CodSoft -->
+                <div class="mb-12 ml-6 fade-in" style="transition-delay: 0.2s;">
+                    <div class="absolute w-4 h-4 bg-[#A78BFA] rounded-full -left-2 top-0 mt-1"></div>
+                    <div class="bg-[#1A1A2E] p-6 rounded-lg shadow-xl border border-[#6D28D9]">
+                        <h3 class="text-2xl font-semibold text-[#D8B4FE] mb-2">Web Development Intern</h3>
+                        <p class="text-gray-400 mb-2">CodSoft | (1 June 2024 - 30 July 2025)</p>
+                        <ul class="list-disc list-inside text-gray-300 space-y-1">
+                            <li>Built a fully functional travel website using HTML, CSS, JS and Figma, with responsive design and dynamic UI/UX components.</li>
+                            <li>Strengthened frontend skills by integrating interactive features that optimized user engagement.</li>
+                            <li>Gained practical exposure to modern development workflows.</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Experience Item: Frontend Developer Tax4 Wealth -->
+                <div class="mb-12 ml-6 fade-in" style="transition-delay: 0.4s;">
+                    <div class="absolute w-4 h-4 bg-[#A78BFA] rounded-full -left-2 top-0 mt-1"></div>
+                    <div class="bg-[#1A1A2E] p-6 rounded-lg shadow-xl border border-[#6D28D9]">
+                        <h3 class="text-2xl font-semibold text-[#D8B4FE] mb-2">Frontend Developer</h3>
+                        <p class="text-gray-400 mb-2">Tax4 Wealth | (16 Dec 2024 - 15 Jan 2025)</p>
+                        <ul class="list-disc list-inside text-gray-300 space-y-1">
+                            <li>Designed and developed responsive websites using HTML, CSS, and JavaScript.</li>
+                            <li>Working on enhancing the platform by implementing React JS features.</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Experience Item: Freelance Frontend Developer -->
+                <div class="mb-12 ml-6 fade-in" style="transition-delay: 0.6s;">
+                    <div class="absolute w-4 h-4 bg-[#A78BFA] rounded-full -left-2 top-0 mt-1"></div>
+                    <div class="bg-[#1A1A2E] p-6 rounded-lg shadow-xl border border-[#6D28D9]">
+                        <h3 class="text-2xl font-semibold text-[#D8B4FE] mb-2">Freelance Frontend Developer</h3>
+                        <p class="text-gray-400 mb-2">(1 Jan 2024 - Present)</p>
+                        <ul class="list-disc list-inside text-gray-300 space-y-1">
+                            <li>Delivered high-conversion landing pages for clients, doubling user engagement and boosting product sales.</li>
+                            <li>Customized frontend solutions using HTML, CSS, and JavaScript tailored to client needs.</li>
+                            <li>Ensured mobile-first, responsive interfaces for modern browsers.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 md:py-32 bg-[#1A1A2E] parallax-section">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center text-[#A78BFA] mb-12 slide-up">My Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+               
+                <!-- Project Card: Travel Booking Site - Frontend -->
+                <div class="bg-[#0D0D1A] rounded-lg shadow-xl overflow-hidden border border-[#6D28D9] scale-in p-6 project-card transform transition duration-300 ease-in-out" style="transition-delay: 0.2s;">
+                    <img src="/images/Travel.png" alt="Travel Booking Site" class="w-full h-48 object-cover rounded-md mb-4">
+                    <h3 class="text-2xl font-semibold text-[#D8B4FE] mb-2">Travel Booking Site</h3>
+                    <p class="text-gray-300 mb-4 text-sm">A responsive and dynamic tourism website built with HTML, CSS, and JavaScript. It features seamless navigation and interactive elements, including engaging image galleries, to provide users with a friendly and immersive travel planning experience.</p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="bg-[#6D28D9] text-purple-100 text-xs font-medium px-2.5 py-0.5 rounded-full">HTML</span>
+                        <span class="bg-[#6D28D9] text-purple-100 text-xs font-medium px-2.5 py-0.5 rounded-full">CSS</span>
+                        <span class="bg-[#6D28D9] text-purple-100 text-xs font-medium px-2.5 py-0.5 rounded-full">JavaScript</span>
+                    </div>
+                    <div class="flex justify-between mt-4">
+                        <a href="#" target="_blank" class="text-[#A78BFA] hover:text-[#D8B4FE] font-semibold transition duration-300 flex items-center">
+                            <i class="fas fa-external-link-alt mr-2"></i> Live Demo
+                        </a>
+                        <a href="#" target="_blank" class="text-[#A78BFA] hover:text-[#D8B4FE] font-semibold transition duration-300 flex items-center">
+                            <i class="fab fa-github mr-2"></i> Source Code
+                        </a>
+                    </div>
+                </div>
+                <!-- Project Card: TaxBOTGPT AI/Frontend -->
+                <div class="bg-[#0D0D1A] rounded-lg shadow-xl overflow-hidden border border-[#6D28D9] scale-in p-6 project-card transform transition duration-300 ease-in-out" style="transition-delay: 0.4s;">
+                    <img src="/images/TaxbotGPT.png" alt="TaxBOTGPT AI/Frontend" class="w-full h-48 object-cover rounded-md mb-4">
+                    <h3 class="text-2xl font-semibold text-[#D8B4FE] mb-2">TaxBOTGPT AI/Frontend</h3>
+                    <p class="text-gray-300 mb-4 text-sm">Designed and developed the user-friendly frontend for TaxBotGPT, an AI-powered platform. This project focused on creating a clean UI/UX and responsive design using HTML, CSS, and JavaScript, ensuring an intuitive and accessible experience for tax-related queries.</p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="bg-[#6D28D9] text-purple-100 text-xs font-medium px-2.5 py-0.5 rounded-full">AI</span>
+                        <span class="bg-[#6D28D9] text-purple-100 text-xs font-medium px-2.5 py-0.5 rounded-full">HTML</span>
+                        <span class="bg-[#6D28D9] text-purple-100 text-xs font-medium px-2.5 py-0.5 rounded-full">CSS</span>
+                        <span class="bg-[#6D28D9] text-purple-100 text-xs font-medium px-2.5 py-0.5 rounded-full">JavaScript</span>
+                    </div>
+                    <div class="flex justify-between mt-4">
+                        <a href="#" target="_blank" class="text-[#A78BFA] hover:text-[#D8B4FE] font-semibold transition duration-300 flex items-center">
+                            <i class="fas fa-external-link-alt mr-2"></i> Live Demo
+                        </a>
+                        <a href="#" target="_blank" class="text-[#A78BFA] hover:text-[#D8B4FE] font-semibold transition duration-300 flex items-center">
+                            <i class="fab fa-github mr-2"></i> Source Code
+                        </a>
+                    </div>
+                </div>
+                <!-- Project Card: Cooper AI-API AI Therapist -->
+                <div class="bg-[#0D0D1A] rounded-lg shadow-xl overflow-hidden border border-[#6D28D9] scale-in p-6 project-card transform transition duration-300 ease-in-out" style="transition-delay: 0.6s;">
+                    <img src="/images/Therapist.png" alt="Cooper AI-API AI Therapist" class="w-full h-48 object-cover rounded-md mb-4">
+                    <h3 class="text-2xl font-semibold text-[#D8B4FE] mb-2">Cooper AI Therapist</h3>
+                    <p class="text-gray-300 mb-4 text-sm">An innovative healthcare chatbot, "Cooper AI-API Based Therapist," offering 24/7 online service. This AI-powered solution is specialized in treating various diseases, providing accessible and continuous support to users seeking therapeutic assistance.</p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="bg-[#6D28D9] text-purple-100 text-xs font-medium px-2.5 py-0.5 rounded-full">AI</span>
+                        <span class="bg-[#6D28D9] text-purple-100 text-xs font-medium px-2.5 py-0.5 rounded-full">Healthcare</span>
+                        <span class="bg-[#6D28D9] text-purple-100 text-xs font-medium px-2.5 py-0.5 rounded-full">Chatbot</span>
+                    </div>
+                    <div class="flex justify-between mt-4">
+                        <a href="#" target="_blank" class="text-[#A78BFA] hover:text-[#D8B4FE] font-semibold transition duration-300 flex items-center">
+                            <i class="fas fa-external-link-alt mr-2"></i> Live Demo
+                        </a>
+                        <a href="#" target="_blank" class="text-[#A78BFA] hover:text-[#D8B4FE] font-semibold transition duration-300 flex items-center">
+                            <i class="fab fa-github mr-2"></i> Source Code
+                        </a>
+                    </div>
+                </div>
+                 <!-- Project Card: Phishing Website Detection - Machine Learning -->
+                <div class="bg-[#0D0D1A] rounded-lg shadow-xl overflow-hidden border border-[#6D28D9] scale-in p-6 project-card transform transition duration-300 ease-in-out">
+                    <img src="https://ic.nordcdn.com/v1/https://sb.nordcdn.com/m/8a5274e577946084/original/blog-featured-line-phishing-site-1c-945x495-1-svg.svg" alt="Phishing Website Detection" class="w-full h-48 object-cover rounded-md mb-4">
+                    <h3 class="text-2xl font-semibold text-[#D8B4FE] mb-2">Phishing Website Detection</h3>
+                    <p class="text-gray-300 mb-4 text-sm">Built a machine learning model to detect phishing websites by analyzing features like URL structure, SSL certificates, and webpage metadata, achieving high accuracy using classification algorithms like Random Forest and SVM.</p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="bg-[#6D28D9] text-purple-100 text-xs font-medium px-2.5 py-0.5 rounded-full">Machine Learning</span>
+                        <span class="bg-[#6D28D9] text-purple-100 text-xs font-medium px-2.5 py-0.5 rounded-full">Random Forest</span>
+                        <span class="bg-[#6D28D9] text-purple-100 text-xs font-medium px-2.5 py-0.5 rounded-full">SVM</span>
+                    </div>
+                    <div class="flex justify-between mt-4">
+                        <a href="#" target="_blank" class="text-[#A78BFA] hover:text-[#D8B4FE] font-semibold transition duration-300 flex items-center">
+                            <i class="fas fa-external-link-alt mr-2"></i> Live Demo
+                        </a>
+                        <a href="#" target="_blank" class="text-[#A78BFA] hover:text-[#D8B4FE] font-semibold transition duration-300 flex items-center">
+                            <i class="fab fa-github mr-2"></i> Source Code
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 md:py-32 bg-[#0D0D1A] parallax-section">
+        <div class="container mx-auto px-6 max-w-4xl">
+            <h2 class="text-4xl font-bold text-center text-[#A78BFA] mb-12 slide-up">My Skills</h2>
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                <!-- Languages & Frameworks -->
+                <div class="bg-[#1A1A2E] p-6 rounded-lg shadow-xl text-center border border-[#6D28D9] fade-in transform hover:scale-105 transition duration-300 group">
+                    <i class="fab fa-js fa-3x text-[#D8B4FE] mb-4 transition-colors duration-300 skill-icon-js"></i>
+                    <h3 class="text-xl font-semibold text-gray-200">JavaScript</h3>
+                </div>
+                <div class="bg-[#1A1A2E] p-6 rounded-lg shadow-xl text-center border border-[#6D28D9] fade-in transform hover:scale-105 transition duration-300 group" style="transition-delay: 0.1s;">
+                    <i class="fab fa-react fa-3x text-[#D8B4FE] mb-4 transition-colors duration-300 skill-icon-react"></i>
+                    <h3 class="text-xl font-semibold text-gray-200">React.js</h3>
+                </div>
+                <div class="bg-[#1A1A2E] p-6 rounded-lg shadow-xl text-center border border-[#6D28D9] fade-in transform hover:scale-105 transition duration-300 group" style="transition-delay: 0.2s;">
+                    <i class="fab fa-html5 fa-3x text-[#D8B4FE] mb-4 transition-colors duration-300 skill-icon-html"></i>
+                    <h3 class="text-xl font-semibold text-gray-200">HTML5</h3>
+                </div>
+                <div class="bg-[#1A1A2E] p-6 rounded-lg shadow-xl text-center border border-[#6D28D9] fade-in transform hover:scale-105 transition duration-300 group" style="transition-delay: 0.3s;">
+                    <i class="fab fa-css3-alt fa-3x text-[#D8B4FE] mb-4 transition-colors duration-300 skill-icon-css"></i>
+                    <h3 class="text-xl font-semibold text-gray-200">CSS3</h3>
+                </div>
+                <div class="bg-[#1A1A2E] p-6 rounded-lg shadow-xl text-center border border-[#6D28D9] fade-in transform hover:scale-105 transition duration-300 group" style="transition-delay: 0.4s;">
+                    <!-- C++ Icon -->
+                    <svg class="w-12 h-12 mx-auto mb-4 text-[#D8B4FE] transition-colors duration-300 skill-icon-cpp" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5v-9l6 4.5-6 4.5z"/>
+                    </svg>
+                    <h3 class="text-xl font-semibold text-gray-200">C++</h3>
+                </div>
+               
+                <!-- Tools -->
+                <div class="bg-[#1A1A2E] p-6 rounded-lg shadow-xl text-center border border-[#6D28D9] fade-in transform hover:scale-105 transition duration-300 group" style="transition-delay: 0.6s;">
+                    <i class="fab fa-git-alt fa-3x text-[#D8B4FE] mb-4 transition-colors duration-300 skill-icon-git"></i>
+                    <h3 class="text-xl font-semibold text-gray-200">Git</h3>
+                </div>
+                <div class="bg-[#1A1A2E] p-6 rounded-lg shadow-xl text-center border border-[#6D28D9] fade-in transform hover:scale-105 transition duration-300 group" style="transition-delay: 0.7s;">
+                    <i class="fab fa-github fa-3x text-[#D8B4FE] mb-4 transition-colors duration-300 skill-icon-github"></i>
+                    <h3 class="text-xl font-semibold text-gray-200">GitHub</h3>
+                </div>
+                
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 md:py-32 bg-[#1A1A2E] parallax-section">
+        <div class="container mx-auto px-6 max-w-2xl">
+            <h2 class="text-4xl font-bold text-center text-[#A78BFA] mb-12 slide-up">Get in Touch</h2>
+            <div class="bg-[#0D0D1A] p-8 rounded-lg shadow-xl border border-[#6D28D9] fade-in">
+                <p class="text-lg text-gray-300 text-center mb-8">
+                    Have a project in mind or just want to say hello? Feel free to reach out!
+                </p>
+                <form class="space-y-6">
+                    <div>
+                        <label for="name" class="block text-gray-300 text-sm font-bold mb-2">Name</label>
+                        <input type="text" id="name" name="name" class="shadow appearance-none border border-gray-700 rounded-lg w-full py-3 px-4 text-gray-200 leading-tight focus:outline-none focus:ring-2 focus:ring-[#A78BFA] bg-gray-700" placeholder="Your Name" required>
+                    </div>
+                    <div>
+                        <label for="email" class="block text-gray-300 text-sm font-bold mb-2">Email</label>
+                        <input type="email" id="email" name="email" class="shadow appearance-none border border-gray-700 rounded-lg w-full py-3 px-4 text-gray-200 leading-tight focus:outline-none focus:ring-2 focus:ring-[#A78BFA] bg-gray-700" placeholder="kumaraakash9818@gmail.com" required>
+                    </div>
+                    <div>
+                        <label for="message" class="block text-gray-300 text-sm font-bold mb-2">Message</label>
+                        <textarea id="message" name="message" rows="6" class="shadow appearance-none border border-gray-700 rounded-lg w-full py-3 px-4 text-gray-200 leading-tight focus:outline-none focus:ring-2 focus:ring-[#A78BFA] bg-gray-700" placeholder="Your message..." required></textarea>
+                    </div>
+                    <div class="text-center">
+                        <button type="submit" class="bg-[#A78BFA] hover:bg-[#D8B4FE] text-white font-bold py-3 px-8 rounded-full shadow-lg transform hover:scale-105 transition duration-300 ease-in-out">
+                            Send Message
+                        </button>
+                    </div>
+                </form>
+                <div class="text-center mt-8">
+                    <p class="text-gray-300">Or reach me directly:</p>
+                    <div class="flex justify-center items-center mt-2">
+                        <span id="email-address" class="text-[#D8B4FE] font-semibold cursor-pointer hover:underline" title="Click to copy">kumaraakash9818@gmail.com</span>
+                        <button id="copy-email-button" class="ml-2 bg-[#6D28D9] text-white px-3 py-1 rounded-md text-sm hover:bg-purple-800 transition duration-300">Copy</button>
+                        <span id="copy-feedback" class="ml-2 text-green-400 hidden">Copied!</span>
+                    </div>
+                    <p class="text-gray-300 mt-2">Phone: (+91) 70420945444</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[#0D0D1A] py-8 text-center text-gray-400 text-sm">
+        <div class="container mx-auto px-6">
+            <p>&copy; 2025 AKASH KUMAR. All rights reserved.</p>
+            <div class="flex justify-center space-x-4 mt-4">
+                <a href="https://www.linkedin.com/in/yourprofile" target="_blank" class="text-gray-400 hover:text-[#A78BFA] transition duration-300">
+                    <i class="fab fa-linkedin fa-2x"></i>
+                </a>
+                <a href="https://github.com/yourprofile" target="_blank" class="text-gray-400 hover:text-[#A78BFA] transition duration-300">
+                    <i class="fab fa-github fa-2x"></i>
+                </a>
+                <!-- Add other social links from resume if available (LeetCode, GeeksforGeeks) -->
+                <a href="https://leetcode.com/yourprofile" target="_blank" class="text-gray-400 hover:text-[#A78BFA] transition duration-300">
+                    <svg class="w-6 h-6 inline-block" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13.25 10.75h-2.5v2.5h2.5v-2.5zm-5 0h-2.5v2.5h2.5v-2.5zm10 0h-2.5v2.5h2.5v-2.5zm-5-5h-2.5v2.5h2.5v-2.5zm-5 0h-2.5v2.5h2.5v-2.5zm10 0h-2.5v2.5h2.5v-2.5zM12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/>
+                    </svg>
+                </a>
+                <a href="https://www.geeksforgeeks.org/user/yourprofile" target="_blank" class="text-gray-400 hover:text-[#A78BFA] transition duration-300">
+                    <svg class="w-6 h-6 inline-block" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12s4.48 10 10 10 10-4.48 10-10zm-9 7h-2v-2h2v2zm0-4h-2V7h2v8z"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Scroll to Top Button -->
+    <button id="scroll-to-top" class="fixed bottom-8 right-8 bg-[#A78BFA] hover:bg-[#D8B4FE] text-white p-4 rounded-full shadow-lg transition-all duration-300 opacity-0 transform translate-y-4">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Three.js CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <!-- External JS -->
+    <script src="../js/script.js"></script>
+</body>
+</html>
